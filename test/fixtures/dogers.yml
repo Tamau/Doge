@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  awesome: 1
+  wow_factor: 1.5
+  color: MyString
+
+two:
+  name: MyString
+  awesome: 1
+  wow_factor: 1.5
+  color: MyString

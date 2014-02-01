@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @doger.name %>
+</p>
+
+<p>
+  <strong>Awesome:</strong>
+  <%= @doger.awesome %>
+</p>
+
+<p>
+  <strong>Wow factor:</strong>
+  <%= @doger.wow_factor %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @doger.color %>
+</p>
+
+<%= link_to 'Edit', edit_doger_path(@doger) %> |
+<%= link_to 'Back', dogers_path %>

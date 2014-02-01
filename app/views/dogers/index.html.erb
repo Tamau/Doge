@@ -1,0 +1,33 @@
+<h1>Listing dogers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Awesome</th>
+      <th>Wow factor</th>
+      <th>Color</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @dogers.each do |doger| %>
+      <tr>
+        <td><%= doger.name %></td>
+        <td><%= doger.awesome %></td>
+        <td><%= doger.wow_factor %></td>
+        <td><%= doger.color %></td>
+        <td><%= link_to 'Show', doger %></td>
+        <td><%= link_to 'Edit', edit_doger_path(doger) %></td>
+        <td><%= link_to 'Destroy', doger, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Doger', new_doger_path %>
